@@ -8,6 +8,7 @@
     "dev": "webpack",
     "deploy": "webpack --config webpack.production.config.js",
     "test": "eslint ./src/**/**.js",
+    "postinstall": "npm install",
     "heroku-postbuild": "webpack --config webpack-production.config.js --progress --colors"
   },
   "license": "MIT",
